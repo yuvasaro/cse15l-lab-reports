@@ -14,8 +14,10 @@
 * Items
 3. Hurrah
 
-`ssh [enter ucsd computer here]`
+code...?
+`ssh [enter government computer here]`
 
+code Block.
 ```Java
 public static... nah i'm too lazy
 ```
