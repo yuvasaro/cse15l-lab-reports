@@ -15,4 +15,4 @@ Visual Studio Code is a lightweight code editor that comes with a terminal. Firs
 Then navigate to your `Downloads` folder and double click on the installer. Follow the instructions, then open up VSCode.
 You should see the Get Started page, like in the image below:
 
-![Image]
+![Image](vscode.png)
