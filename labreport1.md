@@ -16,3 +16,4 @@ Then navigate to your `Downloads` folder and double click on the installer. Foll
 You should see the Get Started page, like in the image below:
 
 ![Image](vscode.png)
+
