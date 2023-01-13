@@ -2,9 +2,9 @@
 
 This is a tutorial on how to remote login to `ieng6` with your course-specific account. There are three steps:
 
-1. Download VSCode
-2. Remote Login
-3. Run Commands
+1. [Download VSCode](#download-vscode)
+2. [Remote Login](#remote-login-to-ieng6)
+3. [Run Commands](#run-commands)
 
 ---
 
@@ -17,3 +17,21 @@ You should see the Get Started page, like in the image below:
 
 ![Image](vscode.png)
 
+## Remote Login to `ieng6`
+
+Now that you have VSCode installed and open, open up the Terminal inside it. On the menu bar, click Terminal --> New Terminal.
+
+Have your course-specific account ready for this next step. In the terminal enter the following command:
+`ssh cs15lwi23zz@ieng6.ucsd.edu`
+Replace the "zz" with the unique letters in your course-specific account username. A message will appear the first time you log in asking whether you want to continue connecting:
+```
+The authenticity of host 'ieng6.ucsd.edu (128.54.70.227)' can't be established.
+RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec.
+Are you sure you want to continue connecting (yes/no/[fingerprint])?
+```
+Enter "yes".
+
+Now enter the password for your account.
+
+
+## Run Commands
