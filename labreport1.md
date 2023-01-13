@@ -46,3 +46,7 @@ Now let's try running some commands on `ieng6`. There are many commands you can 
 * Use `ls` to view the files in your current working directory. Add `-a` to see all hidden files, and `-l` to see the files in a large list with more information about each file.
 
 Here is an example in which a new folder and new file are created and then removed:
+
+![Image](runcommands.png)
+
+Congratulations! You are now able to access `ieng6` and manipulate files on it.
