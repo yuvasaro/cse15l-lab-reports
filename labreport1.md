@@ -22,7 +22,9 @@ You should see the Get Started page, like in the image below:
 Now that you have VSCode installed and open, open up the Terminal inside it. On the menu bar, click Terminal --> New Terminal.
 
 Have your course-specific account ready for this next step. In the terminal enter the following command:
+
 `ssh cs15lwi23zz@ieng6.ucsd.edu`
+
 Replace the "zz" with the unique letters in your course-specific account username. A message will appear the first time you log in asking whether you want to continue connecting:
 ```
 The authenticity of host 'ieng6.ucsd.edu (128.54.70.227)' can't be established.
