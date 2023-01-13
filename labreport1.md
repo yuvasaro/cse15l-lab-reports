@@ -33,7 +33,8 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])?
 ```
 Enter "yes".
 
-Now enter the password for your account.
+Now enter the password for your account. Then, you should see something similar to the following appear on your terminal. This means you have successfully logged in.
 
+![Image](remotelogin.png)
 
 ## Run Commands
