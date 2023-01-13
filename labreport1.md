@@ -49,4 +49,6 @@ Here is an example in which a new folder and new file are created and then remov
 
 ![Image](runcommands.png)
 
+To logout from your remote connection, simply enter the command `logout` or `exit` in the terminal.
+
 Congratulations! You are now able to access `ieng6` and manipulate files on it.
