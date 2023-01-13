@@ -38,3 +38,11 @@ Now enter the password for your account. Then, you should see something similar 
 ![Image](remotelogin.png)
 
 ## Run Commands
+
+Now let's try running some commands on `ieng6`. There are many commands you can try out. Here are some ideas:
+* Use `pwd` to print your current working directory.
+* Use `mkdir` to create a new folder and `cd` to navigate to your new folder.
+* Use `cd ..` to navigate to the parent directory of your current working directory.
+* Use `ls` to view the files in your current working directory. Add `-a` to see all hidden files, and `-l` to see the files in a large list with more information about each file.
+
+Here is an example in which a new folder and new file are created and then removed:
