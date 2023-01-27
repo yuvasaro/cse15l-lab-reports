@@ -2,9 +2,11 @@
 
 ## Part 1 - StringServer
 
+**Server.java** (Reused from Week 2 Lab)
+
 <details>
   
-<summary>Code for **Server.java** (Reused from Week 2 Lab - Click to expand)</summary>
+<summary>Click to expand</summary>
 
 ```Java
 // A simple web server using Java's built-in HttpServer
@@ -64,7 +66,7 @@ public class Server {
   
 </details>
   
-Code for **StringServer.java**
+**StringServer.java**
 
 ```Java
 import java.io.IOException;
@@ -114,4 +116,4 @@ Using `/add-message` once at `http://localhost:4000/add-message?s=Hello`:
 
 Using `/add-message` a second time at `http://localhost:4000/add-message?s=How are you`:
 
-1[addmessage2]
+![addmessage2]
