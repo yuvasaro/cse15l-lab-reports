@@ -110,10 +110,29 @@ class StringServer {
 }
 ```
 
+<br>
+
 Using `/add-message` once at `http://localhost:4000/add-message?s=Hello`:
 
 ![addmessage1](screenshots/addmessage1.png)
 
+In the code, the method `handleRequest()` is called with the `URI` object containing the URL I entered. 
+Next, the `getPath()` method is called on the `URI` object and the result is compared to the path `/add-message` with `.equals()`.
+Since the path matches, the code checks if the given parameter is `s`, and since it is, adds its value to the class field `messages`, an 
+ArrayList of strings which is currently empty.
+Finally, the `getMessages()` method is called, which is a private method I wrote that puts all the messages stored in the `messages`
+ArrayList into a string, separated by new line characters. This string is returned by the `handleRequest()` method.
+The value of the `messages` field changes from an empty ArrayList to a list with one string, `"Hello"`.
+
+<br>
+
 Using `/add-message` a second time at `http://localhost:4000/add-message?s=How are you`:
 
 ![addmessage2](screenshots/addmessage2.png)
+
+In the code, the method `handleRequest()` is called with the `URI` object containing this new URL I entered. 
+Next, the `getPath()` method is called on the `URI` object and the result is compared to the path `/add-message` with `.equals()`.
+Since the path matches, the code checks if the given parameter is `s`, and if so, adds its value to the class field `messages`, an 
+ArrayList of strings which currently has one string, `"Hello"`.
+Finally, the `getMessages()` method is called, and its return string is returned by the `handleRequest()` method.
+The value of the `messages` field changes from an ArrayList with one string to a list with two strings, `"Hello"` and `"How are you"`.
