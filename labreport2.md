@@ -65,6 +65,8 @@ public class Server {
 ```
   
 </details>
+
+<br>
   
 **StringServer.java**
 
