@@ -60,7 +60,7 @@ public class Server {
 }
 ```
 
-<br>
+
   
 **StringServer.java**
 
@@ -106,7 +106,7 @@ class StringServer {
 }
 ```
 
-<br>
+
 
 Using `/add-message` once at `http://localhost:4000/add-message?s=Hello`:
 
@@ -120,7 +120,7 @@ Finally, the `getMessages()` method is called, which is a private method I wrote
 ArrayList into a string, separated by new line characters. This string is returned by the `handleRequest()` method.
 The value of the `messages` field changes from an empty ArrayList to a list with one string, `"Hello"`.
 
-<br>
+
 
 Using `/add-message` a second time at `http://localhost:4000/add-message?s=How are you`:
 
@@ -133,11 +133,11 @@ ArrayList of strings which currently has one string, `"Hello"`.
 Finally, the `getMessages()` method is called, and its return string is returned by the `handleRequest()` method.
 The value of the `messages` field changes from an ArrayList with one string to a list with two strings, `"Hello"` and `"How are you"`.
 
-<br>
+
 
 ---
 
-<br>
+
 
 ## Part 2 - Bug
 
@@ -152,7 +152,7 @@ public void testReverseInPlaceActuallyGoodTest() {
 }
 ```
 
-<br>
+
 
 ### **Non failure-inducing input:**
 
@@ -165,7 +165,7 @@ public void testReverseInPlace() {
 }
 ```
 
-<br>
+
 
 ### **Symptom:**
 
@@ -177,7 +177,7 @@ Second input (non failure-inducing):
 
 ![testpass](screenshots/testpass.png)
 
-<br>
+
 
 ### **Bug:**
 
@@ -217,11 +217,11 @@ old values that need to be put in the second half of the array. Using a new arra
 over the data from the new array back to the original array addresses the issue because it prevents the error of changing the first few 
 elements of the array before they can be copied to the end of the array. 
 
-<br>
+
 
 ---
 
-<br>
+
 
 ## Part 3 - What I learned
 
