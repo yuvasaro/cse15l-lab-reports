@@ -116,4 +116,4 @@ Using `/add-message` once at `http://localhost:4000/add-message?s=Hello`:
 
 Using `/add-message` a second time at `http://localhost:4000/add-message?s=How are you`:
 
-![addmessage2](screenshots/addmessage1.png)
+![addmessage2](screenshots/addmessage2.png)
