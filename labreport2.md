@@ -4,10 +4,6 @@
 
 **Server.java** (Reused from Week 2 Lab)
 
-<details>
-  
-<summary>Click to expand</summary>
-
 ```Java
 // A simple web server using Java's built-in HttpServer
 
@@ -63,8 +59,6 @@ public class Server {
     }
 }
 ```
-  
-</details>
 
 <br>
   
