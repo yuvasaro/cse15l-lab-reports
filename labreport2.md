@@ -136,3 +136,49 @@ Since the path matches, the code checks if the given parameter is `s`, and if so
 ArrayList of strings which currently has one string, `"Hello"`.
 Finally, the `getMessages()` method is called, and its return string is returned by the `handleRequest()` method.
 The value of the `messages` field changes from an ArrayList with one string to a list with two strings, `"Hello"` and `"How are you"`.
+
+---
+
+## Part 2 - Bug
+
+Original code:
+
+```Java
+// Changes the input array to be in reversed order
+static void reverseInPlace(int[] arr) {
+  for(int i = 0; i < arr.length; i += 1) {
+    arr[i] = arr[arr.length - i - 1];
+  }
+}
+```
+
+<br>
+
+Failure-inducing input:
+
+```Java
+@Test
+public void testReverseInPlaceActuallyGoodTest() {
+  int[] input1 = {1, 2, 3, 4};
+  ArrayExamples.reverseInPlace(input1);
+  assertArrayEquals(new int[]{4, 3, 2, 1}, input1);
+}
+```
+
+<br>
+
+Non failure-inducing input:
+
+```Java
+@Test 
+public void testReverseInPlace() {
+  int[] input1 = { 3 };
+  ArrayExamples.reverseInPlace(input1);
+  assertArrayEquals(new int[]{ 3 }, input1);
+}
+```
+
+<br>
+
+Symptom:
+
