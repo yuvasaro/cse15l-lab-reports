@@ -137,24 +137,15 @@ ArrayList of strings which currently has one string, `"Hello"`.
 Finally, the `getMessages()` method is called, and its return string is returned by the `handleRequest()` method.
 The value of the `messages` field changes from an ArrayList with one string to a list with two strings, `"Hello"` and `"How are you"`.
 
+<br>
+
 ---
-
-## Part 2 - Bug
-
-Original code:
-
-```Java
-// Changes the input array to be in reversed order
-static void reverseInPlace(int[] arr) {
-  for(int i = 0; i < arr.length; i += 1) {
-    arr[i] = arr[arr.length - i - 1];
-  }
-}
-```
 
 <br>
 
-Failure-inducing input:
+## Part 2 - Bug
+
+### **Failure-inducing input:**
 
 ```Java
 @Test
@@ -167,7 +158,7 @@ public void testReverseInPlaceActuallyGoodTest() {
 
 <br>
 
-Non failure-inducing input:
+### **Non failure-inducing input:**
 
 ```Java
 @Test 
@@ -180,5 +171,66 @@ public void testReverseInPlace() {
 
 <br>
 
-Symptom:
+### **Symptom:**
 
+First input (failure-inducing):
+
+![testfail](screenshots/testfail.png)
+
+Second input (non failure-inducing):
+
+![testpass](screenshots/testpass.png)
+
+<br>
+
+### **Bug:**
+
+Original code:
+
+```Java
+// Changes the input array to be in reversed order
+static void reverseInPlace(int[] arr) {
+  for(int i = 0; i < arr.length; i += 1) {
+    arr[i] = arr[arr.length - i - 1];
+  }
+}
+```
+
+Fixed code:
+
+```
+// Changes the input array to be in reversed order
+static void reverseInPlace(int[] arr) {
+  // Do the reversing in a new array
+  int[] newArr = new int[arr.length];
+
+  for(int i = 0; i < arr.length; i += 1) {
+    newArr[i] = arr[arr.length - i - 1];
+  }
+
+  // Copy the reversed numbers back into the original array
+  for (int i = 0; i < arr.length; i++) {
+    arr[i] = newArr[i];
+  }
+}
+```
+
+In the original code, the reversing would work as the last elements are copied to the first few spots in the array until the halfway 
+point, and then it would try to copy over the first half of the array to the second half, but the first half would no longer have the 
+old values that need to be put in the second half of the array. Using a new array to add the reversed elements to and then copying 
+over the data from the new array back to the original array addresses the issue because it prevents the error of changing the first few 
+elements of the array before they can be copied to the end of the array. 
+
+<br>
+
+---
+
+<br>
+
+## Part 3 - What I learned
+
+In Week 2's lab, I learned about how Java servers are set up and run, and that when we enter a URL we send a request to a server, which
+in turn brings us a response. I also learned how to `ssh` into `ieng6` and manipulate files on it, and even host my Java server on it so
+that others in the class can access the page and send it requests. Finally, I learned how to use JUnit to create meaningful tests with
+different sized inputs and catch and fix bugs in my code in Week 3's lab. I realized that code producing expected output for a few inputs 
+does not mean that the code is fully functioning for ALL legal inputs.
