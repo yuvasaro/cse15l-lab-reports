@@ -112,8 +112,8 @@ class StringServer {
 
 Using `/add-message` once at `http://localhost:4000/add-message?s=Hello`:
 
-![addmessage1]
+![addmessage1](screenshots/addmessage1.png)
 
 Using `/add-message` a second time at `http://localhost:4000/add-message?s=How are you`:
 
-![addmessage2]
+![addmessage2](screenshots/addmessage1.png)
