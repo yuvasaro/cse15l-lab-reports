@@ -15,7 +15,7 @@ Visual Studio Code is a lightweight code editor that comes with a terminal. Firs
 Then navigate to your `Downloads` folder and double click on the installer. Follow the instructions, then open up VSCode.
 You should see the Get Started page, like in the image below:
 
-![Image](vscode.png)
+![Image](screenshots/vscode.png)
 
 ## Remote Login to `ieng6`
 
@@ -35,7 +35,7 @@ Enter "yes".
 
 Now enter the password for your account. Then, you should see something similar to the following appear on your terminal. This means you have successfully logged in.
 
-![Image](remotelogin.png)
+![Image](screenshots/remotelogin.png)
 
 ## Run Commands
 
@@ -47,7 +47,7 @@ Now let's try running some commands on `ieng6`. There are many commands you can 
 
 Here is an example in which a new folder and new file are created and then removed:
 
-![Image](runcommands.png)
+![Image](screenshots/runcommands.png)
 
 To logout from your remote connection, simply enter the command `logout` or `exit` in the terminal.
 
