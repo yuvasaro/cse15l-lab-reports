@@ -198,7 +198,7 @@ static void reverseInPlace(int[] arr) {
 
 Fixed code:
 
-```
+```Java
 // Changes the input array to be in reversed order
 static void reverseInPlace(int[] arr) {
   // Do the reversing in a new array
