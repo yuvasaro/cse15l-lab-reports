@@ -44,7 +44,23 @@ The `-n` tag means to get the line number in a file where a match was found.
 
 ![grep5](screenshots/grep5.png)
 
-We can combine it with the `-r` tag to find all the line numbers of the files in the directory containing the string:
+We can combine it with the `-r` tag to find all the line numbers of the files in the directory containing 
+the string:
 
 ![grep6](screenshots/grep6.png)
 
+### [4] (Source: ChatGPT)
+
+```bash
+grep -v "search_string" directory/
+```
+
+The `-v` tag means to reverse the match, or show all the lines in a file that _don't_ contain the string.
+
+![grep7](screenshots/grep7.png)
+
+Here we search for all lines that don't contain the word "the", but one line with a capitalized "The" 
+appears because the grep command by default is case-sensitive. To make it ignore case, we can use the
+`-i` tag. This time, let's look for all lines that don't contain "the" OR "a", case-insensitive:
+
+![grep8](screenshots/grep8.png)
