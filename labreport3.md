@@ -80,8 +80,8 @@ Despite grim work lives, Rosie and Henry, who had little schooling themselves, s
 This code searches for the word "Despite" at the beginning of lines in the file and returns all the
 occurrences.
 
-We can also search for all files in a directory containing a certain regular expression with `grep -rlE
-<regex> <directory>`:
+We can also search for all files in a directory containing a certain regular expression with 
+`grep -rlE <regex> <directory>`:
 
 ```bash
 grep -rlE "^Despite" written_2
