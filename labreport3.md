@@ -2,7 +2,8 @@
 
 ## Grep Command
 
-[1] (Source: ChatGPT)
+### [1] (Source: ChatGPT)
+
 ```bash
 grep -r "search_string" directory/
 ```
@@ -16,7 +17,7 @@ Combining the `-r` tag with the `-l` tag that lists the files that contain the s
 
 ![grep2](screenshots/grep2.png)
 
-[2] (Source: ChatGPT, [linuxize.com](https://linuxize.com/post/regular-expressions-in-grep/))
+### [2] (Source: ChatGPT, [linuxize.com](https://linuxize.com/post/regular-expressions-in-grep/))
 
 ```bash
 grep -E "^[0-9]+$" file.txt
@@ -25,4 +26,25 @@ grep -E "^[0-9]+$" file.txt
 The `-E` tag means to search for a regular expression. A regular expression is a string with symbols 
 that represent certain searching criteria. For example, the `^` (caret) symbol means match the string 
 following the symbol if it is located at the start of a line.
+
+![grep3](screenshots/grep3.png)
+
+We can also search for all files in a directory containing a certain regular expression with `grep -rlE
+<regex> <directory>`:
+
+![grep4](screenshots/grep4.png)
+
+### [3] (Source: ChatGPT)
+
+```bash
+grep -n "search_string" directory/
+```
+
+The `-n` tag means to get the line number in a file where a match was found.
+
+![grep5](screenshots/grep5.png)
+
+We can combine it with the `-r` tag to find all the line numbers of the files in the directory containing the string:
+
+![grep6](screenshots/grep6.png)
 
