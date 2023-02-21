@@ -12,7 +12,9 @@ grep -r "search_string" directory/
 
 The `-r` tag means search recursively, or search all files and folders within a directory including 
 subfolders. We would want to use `grep -r` when we want to search an entire directory of many files
-for a string or pattern, or perform an operation on all those files at the same time.
+for a string or pattern, or perform an operation on all those files at the same time. For example,
+you might search a directory of JUnit test result files for a specific test executed on different
+days to find out on which days that test passed or failed.
 
 ```bash
 grep -r "Lucayans" written_2
@@ -122,7 +124,9 @@ grep -n "search_string" directory/
 
 The `-n` tag means to get the line number in a file where a match was found. This would be useful
 when we need to manually scroll to a certain part of a long file to examine it– we'd use `grep -n` 
-to find the line number and save time by simply scrolling to that line number.
+to find the line number and save time by simply scrolling to that line number. Using the JUnit test
+file example again, you could find the line number that a specific test's result is located at and
+scroll to it to view the entire test result.
 
 ```bash
 grep -n "Shopping" written_2/travel_guides/berlitz2/Barcelona-WhatToDo.txt
