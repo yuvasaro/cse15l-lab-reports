@@ -11,7 +11,8 @@ grep -r "search_string" directory/
 ```
 
 The `-r` tag means search recursively, or search all files and folders within a directory including 
-subfolders.
+subfolders. We would want to use `grep -r` when we want to search an entire directory of many files
+for a string or pattern, or perform an operation on all those files at the same time.
 
 ```bash
 grep -r "Lucayans" written_2
@@ -65,7 +66,9 @@ grep -E "^[0-9]+$" file.txt
 
 The `-E` tag means to search for a regular expression. A regular expression is a string with symbols 
 that represent certain searching criteria. For example, the `^` (caret) symbol means match the string 
-following the symbol if it is located at the start of a line.
+following the symbol if it is located at the start of a line. `grep -E` would be useful when we want
+to search a certain file for all lines that include a certain pattern– for example, when you have a
+file containing the results of your JUnit tests and want to search it for specific tests that failed.
 
 ```bash
 grep -E "^Despite" written_2/non-fiction/OUP/Berk/ch1.txt
@@ -117,7 +120,9 @@ lines.
 grep -n "search_string" directory/
 ```
 
-The `-n` tag means to get the line number in a file where a match was found.
+The `-n` tag means to get the line number in a file where a match was found. This would be useful
+when we need to manually scroll to a certain part of a long file to examine it– we'd use `grep -n` 
+to find the line number and save time by simply scrolling to that line number.
 
 ```bash
 grep -n "Shopping" written_2/travel_guides/berlitz2/Barcelona-WhatToDo.txt
@@ -155,6 +160,10 @@ grep -v "search_string" directory/
 ```
 
 The `-v` tag means to reverse the match, or show all the lines in a file that _don't_ contain the string.
+We would want to use `grep -v` in situations where we need to identify lines that don't contain a string
+or pattern that we expect it to contain. Say you were to have a file containing all the JUnit tests that
+threw errors– you might want to find the specific tests that did not throw a `NullPointerException` and
+determine from the results whether the methods that you are testing are functioning correctly.
 
 ```bash
 grep -v "the" written_2/travel_guides/berlitz2/Barcelona-WhatToDo.txt
