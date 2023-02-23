@@ -4,16 +4,18 @@
 
 ### 1. Log into ieng6
 
-![login]
+![login](screenshots/login.png)
 
 Keys pressed: `<up> <up> <enter>`
 
 I used the up arrow twice to access the `ssh <ieng6>` command from my command history and hit enter to 
 execute it.
 
+---
+
 ### 2. Clone your fork of the repository from your Github account
 
-![clone]
+![clone](screenshots/clone.png)
 
 Keys pressed: `^R git c <enter>`
 
@@ -21,9 +23,11 @@ I used `^R` to enter `reverse-i-search` and typed in `git c` to search my comman
 `git clone <url>;cd <repo>` command that I previously executed. This both clones the `lab7` repository 
 and changes directory into the repository's folder.
 
+---
+
 ### 3. Run the tests, demonstrating that they fail
 
-![runtests1]
+![runtests1](screenshots/runtests1.png)
 
 Keys pressed: `^R javac <enter> ^R java<space> <enter>`
 
@@ -31,9 +35,11 @@ I used `^R` again to search my command history for the `javac -cp <path> *.java`
 all the `.java` files in the repository, then executed it with `<enter>`. Then I used `^R` once more to 
 search for the `java -cp <path> <tester class>` command to run the JUnit tests in the tester file.
 
+---
+
 ### 4. Edit the code file to fix the failing test
 
-![edit]
+![edit](screenshots/edit.png)
 
 *Note: screenshot shows editing of file in progress– the rest of the keys pressed exit the editor*
 
@@ -46,9 +52,11 @@ had to enter `i` to enter insert mode and `<delete> 2` to change `index1` to `in
 that the correct variable is incremented and an infinite loop doesn't happen. To save and exit the
 file, I first clicked escape and then entered `:wq!` to write to the file and quit it by force.
 
+---
+
 ### 5. Run the tests, demonstrating that they now succeed
 
-![runtests2]
+![runtests2](screenshots/runtests2.png)
 
 Keys pressed: `<up> <up> <up> <enter> <up> <up> <up> <enter>`
 
@@ -57,9 +65,11 @@ in step 3. This ensures that the edit I made to the `ListExamples.java` file res
 compilation. Then I used the up arrow three times again to access the `java` command that runs the
 tester file. This time the tests passed.
 
+---
+
 ### 6. Commit and push the resulting change to your Github account (you can pick any commit message!)
 
-![commitandpush]
+![commitandpush](screenshots/commitandpush.png)
 
 Keys pressed: `^R git a <enter>`
 
