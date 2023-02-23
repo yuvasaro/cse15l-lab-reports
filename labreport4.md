@@ -1,6 +1,6 @@
 # Lab Report 4 - CSE Labs Done Quick
 
-## Steps (Source: [Week 7 Lab](https://ucsd-cse15l-w23.github.io/week/week7/))
+## Steps (Starting from after setup) (Source: [Week 7 Lab](https://ucsd-cse15l-w23.github.io/week/week7/))
 
 ### 1. Log into ieng6
 
