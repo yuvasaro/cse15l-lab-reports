@@ -39,7 +39,7 @@ search for the `java -cp <path> <tester class>` command to run the JUnit tests i
 
 ### 4. Edit the code file to fix the failing test
 
-![edit](screenshots/edit.png)
+![edit]
 
 *Note: screenshot shows editing of file in progress– the rest of the keys pressed exit the editor*
 
