@@ -51,7 +51,8 @@ replace (in this case, the entire line, so `.*`), and the string to replace the 
 
 ```bash
 javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
-java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore TestListExamples
+java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar 
+                     org.junit.runner.JUnitCore TestListExamples
 ```
 
 This will recompile the Java code files and rerun the tests on `TestListExamples`. This time, the tests
@@ -79,10 +80,12 @@ ssh cs15lwi23amt@ieng6.ucsd.edu
 git clone git@github.com:yuvasaro/lab7.git
 cd lab7
 javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
-java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore TestListExamples
+java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar 
+                     org.junit.runner.JUnitCore TestListExamples
 sed -i "43s/.*/index2 += 1;/" ListExamples.java
 javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
-java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore TestListExamples
+java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar 
+                     org.junit.runner.JUnitCore TestListExamples
 git add .
 git commit -m "i win"
 git push
@@ -145,10 +148,12 @@ ssh cs15lwi23amt@ieng6.ucsd.edu <<'ENDSSH'
 git clone git@github.com:yuvasaro/lab7.git
 cd lab7
 javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
-java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests
+java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar 
+                     org.junit.runner.JUnitCore ListExamplesTests
 sed -i "43s/.*/index2 += 1;/" ListExamples.java
 javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
-java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests
+java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar 
+                     org.junit.runner.JUnitCore ListExamplesTests
 git add .
 git commit -m "i win"
 git push
