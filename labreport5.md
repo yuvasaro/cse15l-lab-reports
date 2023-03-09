@@ -210,7 +210,8 @@ JUnit version 4.13.2
 Time: 0.532
 There was 1 failure:
 1) testMerge2(ListExamplesTests)
-org.junit.runners.model.TestTimedOutException: test timed out after 500 milliseconds
+org.junit.runners.model.TestTimedOutException: test timed out after 
+                                               500 milliseconds
         at java.util.Arrays.copyOf(Arrays.java:3210)
         at java.util.Arrays.copyOf(Arrays.java:3181)
         at java.util.ArrayList.grow(ArrayList.java:267)
