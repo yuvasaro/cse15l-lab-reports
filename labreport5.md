@@ -126,7 +126,6 @@ the rest of the script ran locally on my computer. I realized that after the scr
 
 I searched the internet for a solution to this issue and found a fix 
 [here](https://stackoverflow.com/questions/305035/how-to-use-ssh-to-run-a-local-shell-script-on-a-remote-machine).
-
 A user posted this method of running commands on a remote ssh connection within a bash script:
 
 ```bash
