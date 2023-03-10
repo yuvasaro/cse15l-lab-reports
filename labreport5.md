@@ -1,4 +1,4 @@
-# Lab Report 5 - Favorite Lab Activity
+# Lab Report 5 - Putting It All Together
 
 ## A revamp of CLDQ using a bash script
 
